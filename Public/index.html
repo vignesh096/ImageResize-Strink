@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Imazi</title>
+    <link rel="stylesheet" href="CSS/class.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <li><a href="#">More...</a></li>
+      </nav>
+    </header>
+    <main class="flex-center">
+      <div class="flex-center wrapp">
+        <div class="align-cen flex-column container">
+          <div class="img-inp flex-center flex-column">
+            <input hidden type="file" accept="image/*" />
+            <img src="image/upload.svg" alt="Uploading image" />
+            <p>Browse File to Upload</p>
+          </div>
+
+          <div class="input flex-center">
+            <div class="width flex-center flex-column">
+              <span>Width</span>
+              <label for="width"> <input type="number" id="width" /></label>
+            </div>
+            <div class="height flex-center flex-column">
+              <span>Height</span>
+              <label for="height"><input type="number" id="height" /></label>
+            </div>
+          </div>
+
+          <div class="radio">
+            <div class="aspect-ration">
+              <label for="aspect">
+                <input type="checkbox" checked id="aspect" />
+                Lock Aspect Ratio
+              </label>
+            </div>
+            <div class="size">
+              <label for="shrink">
+                <input type="checkbox" id="shrink" />
+                Shrink Image Size
+              </label>
+            </div>
+          </div>
+
+          <div class="download">
+            <button type="button">Download</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer></footer>
+    <script src="Javascript/script1.js"></script>
+  </body>
+</html>
